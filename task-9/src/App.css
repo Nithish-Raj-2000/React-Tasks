@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Traffic Light Box */
+.traffic-light {
+  width: 120px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Light Style */
+.light {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 15px auto;
+  opacity: 0.3;
+  /* transition: 0.3s; */
+}
+
+/* Colors */
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: rgb(10, 233, 10);
+}
+
+/* Active Light */
+.active {
+  opacity: 1;
+  /* box-shadow: 0px 0px 20px white; */
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h1,
+h2 {
+  color: #333;
+}

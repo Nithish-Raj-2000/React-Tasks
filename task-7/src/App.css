@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.card {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.upload-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.image-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.like-btn {
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.like-btn.liked {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.comment-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.comment-section button {
+  padding: 10px 15px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.comment-section button:hover {
+  background-color: darkgreen;
+}
+
+.comments-list h3 {
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

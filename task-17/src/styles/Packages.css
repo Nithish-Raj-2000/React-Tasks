@@ -1,0 +1,387 @@
+/* Packages Page Styles */
+.packages {
+  width: 100%;
+}
+
+/* Packages Section */
+.packages-section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+}
+
+.filters-container {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.filter-group h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category-btn {
+  padding: 8px 15px;
+  border: 2px solid var(--border-color);
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.category-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.category-btn.active {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-color: var(--accent-color);
+}
+
+.price-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--light-bg), var(--accent-color));
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.price-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.price-display {
+  background-color: var(--light-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background: var(--white);
+  border-radius: 8px;
+  color: var(--text-light);
+}
+
+/* Special Destinations */
+.special-destinations {
+  padding: 3rem 0;
+  background-color: var(--white);
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+.destination-card {
+  background: linear-gradient(135deg, #ecf0f1 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.destination-emoji {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.destination-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.destination-card p {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* Why Book With Us */
+.why-book-with-us {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-item {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-item .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--primary-color);
+}
+
+.modal-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.modal-content p {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.booking-details {
+  margin-bottom: 1.5rem;
+}
+
+.booking-details img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.confirm-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .packages-section,
+  .special-destinations,
+  .why-book-with-us {
+    padding: 2.5rem 0;
+  }
+
+  .filters-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .packages-section,
+  .special-destinations,
+  .why-book-with-us {
+    padding: 2rem 0;
+  }
+
+  .filters-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .benefit-item {
+    padding: 1.2rem;
+  }
+
+  .benefit-item .icon {
+    font-size: 2rem;
+  }
+
+  .modal-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .packages-section,
+  .special-destinations,
+  .why-book-with-us {
+    padding: 1.5rem 0;
+  }
+
+  .filters-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+  }
+
+  .category-btn {
+    width: 100%;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-emoji {
+    font-size: 2.5rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .booking-details img {
+    max-height: 150px;
+  }
+}
